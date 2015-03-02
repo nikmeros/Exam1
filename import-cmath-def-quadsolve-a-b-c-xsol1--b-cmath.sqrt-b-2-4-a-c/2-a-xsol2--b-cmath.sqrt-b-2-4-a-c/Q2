@@ -1,0 +1,5 @@
+import cmath;
+def quadsolve(a,b,c):
+    xsol1 = (-b+cmath.sqrt(b**2-4*a*c))/(2*a);
+    xsol2 = (-b-cmath.sqrt(b**2-4*a*c))/(2*a);
+    return(xsol1,xsol2);
