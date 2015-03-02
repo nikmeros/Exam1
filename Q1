@@ -1,0 +1,11 @@
+storage = [];
+text = str(input("Tell me something. "));
+blank = 0
+while blank == 0:
+    if text == "":
+        print("Done? Ok here's what you told me: ")
+        print(storage);
+        blank = 1
+    else:
+        storage.append(text);
+        text = str(input("Ok, tell me something else. ")); 
