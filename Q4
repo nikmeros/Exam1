@@ -1,0 +1,40 @@
+names=["Noah", "Esther", "Jessica", "Diego", "Jerome", "Rachel", "Arslan",
+  "Nicholas", "Benjamin", "Charles", "Benjamin", "William", "Abraham",
+  "Ricardo", "Nicholas", "Daniel", "Adeeb", "Nathaniel", "David",
+  "David", "Kenneth", "Tate", "Ricky", "Veronica", "Blake", "Sabrina",
+  "Brian", "Baraa", "Jared", "Douglas", "Jeffrey", "Erostin", "Trent",
+  "Nicholas", "Michaela", "Erin", "Anton", "Khai", "Simone", "Jasper",
+  "Sami", "Illya", "Eric", "Bonnie", "Joseph", "Jack", "Barry",
+  "Shuxian", "Chengjie"]
+
+a = 0;
+b = len(names);
+sum = 0
+while a < b:
+    sum += len(names[a]);
+    a+=1;
+avg = round(sum/b,2);
+
+big = max([len(q) for q in names]);
+longest = [];
+a = 0
+while a < b:
+    if len(names[a]) == big:
+        longest.append(names[a]);
+        a+=1;
+    else:
+        a+=1;
+
+small = min([len(g) for g in names]);
+smallest = [];
+a = 0
+while a < b:
+    if len(names[a]) == small:
+        smallest.append(names[a]);
+        a+=1;
+    else:
+        a+=1;
+
+print("The average name is "+str(avg)+ " letters long.");
+print("The longest name(s) are: "+str(longest)+" at "+str(big)+" letters long.");
+print("The shortest name(s) are: "+str(smallest)+" at "+str(small)+" letters long.");
