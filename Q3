@@ -1,0 +1,12 @@
+def altsum(n):
+    a = 0
+    b = len(n);
+    sum = 0
+    while a < b:
+        if a%2 == 0:
+           sum += n[a];
+           a += 1;
+        else:
+            sum -= n[a];
+            a += 1;
+    return(sum)
